@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Project Capstone</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <div class="container">
+      <h1>BeasiSmart</h1>
+      <nav>
+        <ul>
+          <li><a href="#tentang">Tentang</a></li>
+          <li><a href="#beasiswa">Beasiswa</a></li>
+          <li><a href="#kontak">Kontak</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <section id="hero">
+    <div class="container">
+      <h2>Dapatkan Beasiswa Impianmu</h2>
+      <p>Temukan berbagai jenis beasiswa yang sesuai dengan kebutuhanmu</p>
+      <a href="#" class="btn">Lihat Beasiswa</a>
+    </div>
+  </section>
+
+
+  
+
+  <footer>
+    <div class="container">
+      <p>&copy; 2023 Beasismart. All rights reserved.</p>
+    </div>
+  </footer>
+
+</body>
+</html>
+
+<script>
+  window.watsonAssistantChatOptions = {
+    integrationID: "b690e8a9-112a-4c91-9781-541c76ec2f8a", // The ID of this integration.
+    region: "au-syd", // The region your integration is hosted in.
+    serviceInstanceID: "b731c754-62b0-469e-b31a-d952664a09e9", // The ID of your service instance.
+    onLoad: function(instance) { instance.render(); }
+  };
+  setTimeout(function(){
+    const t=document.createElement('script');
+    t.src="https://web-chat.global.assistant.watson.appdomain.cloud/versions/" + (window.watsonAssistantChatOptions.clientVersion || 'latest') + "/WatsonAssistantChatEntry.js";
+    document.head.appendChild(t);
+  });
+</script>
